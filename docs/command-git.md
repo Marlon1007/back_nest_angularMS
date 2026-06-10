@@ -24,3 +24,27 @@ git push origin master
 
 git push -f origin master
 ````
+# Packages
+
+-Autenticación con jwt y Passport
+```
+npm i --save @nestjs/jwt passport-jwt bcrypt
+npm i --save-dev @types/passport-jwt        
+```
+
+# Modules
+````
+- Auth
+- Module
+nest g mo modules/auth
+- Controller
+nest g co modules/auth
+- Service
+nest g s modules/auth
+- Users crud
+nest g res modules/users
+````
+# Class validator
+````
+npm i --save class-validator class-transformer
+````
