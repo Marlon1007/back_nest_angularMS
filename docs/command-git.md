@@ -48,3 +48,7 @@ nest g res modules/users
 ````
 npm i --save class-validator class-transformer
 ````
+# Database
+´´´´
+npm install typeorm @nestjs/typeorm pg
+´´´´
