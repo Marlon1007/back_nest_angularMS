@@ -52,3 +52,10 @@ npm i --save class-validator class-transformer
 ´´´´
 npm install typeorm @nestjs/typeorm pg
 ´´´´
+# Migrations
+´´´´
+- Generate migration
+npm run migration:generate --name=table_user
+- Run migration
+npm run migration:run   
+´´´´
