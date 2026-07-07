@@ -2,8 +2,8 @@ POST http://127.0.0.1:3000/auth/register
 Content-Type: application/json
 
 {
-    "name": "Marlon Silva",
-    "email": "prueba@si.com",
+    "name": "Pedro",
+    "mail": "prueba@sios.com",
     "password": "123456"
 }
 ###login
@@ -11,11 +11,30 @@ POST http://127.0.0.1:3000/auth/login
 Content-Type: application/json
 
 {
-    "name": "Marlon Silva",
-    "email": "prueba@si.com",
+    "name": "Pedro",
+    "email": "prueba@sios.com",
     "password": "123456"
 }
 
 ###
 GET http://127.0.0.1:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6IlBlZHJvIiwiZW1haWwiOiJwcnVlYmFAc2lvcy5jb20iLCJpYXQiOjE3ODM0NTk1MTIsImV4cCI6MTc4MzQ1OTYzMn0.Hi8_S1gO9QDATID7InHrGQN6MRVxvyr4nYu8dGuIhwc
+
+###
+GET http://127.0.0.1:3000/users/3
 Authorization: Bearer 
+
+###
+DELETE http://127.0.0.1:3000/users/3
+Authorization: Bearer
+
+###
+PUT http://127.0.0.1:3000/users/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6IlBlZHJvIiwiZW1haWwiOiJwcnVlYmFAc2lvcy5jb20iLCJpYXQiOjE3ODM0NTk1MTIsImV4cCI6MTc4MzQ1OTYzMn0.Hi8_S1gO9QDATID7InHrGQN6MRVxvyr4nYu8dGuIhwc
+Content-Type: application/json
+
+{
+    "name": "Marlon modified",
+    "mail": "prueba@si.com",
+    "password": "123456"
+}
